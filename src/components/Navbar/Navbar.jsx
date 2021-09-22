@@ -3,7 +3,7 @@ import "./Navbar.css";
 export default function Navbar() {
     return (
         <nav className="navbar">
-            <h4 className="navbar__title">HashCrypto 🪙 (#Top 100)</h4>
+            <h4 className="navbar__title">CryptoHashApp 🪙 (#Top 100)</h4>
            <a  href="https://github.com/Aravindakrishnan"><ion-icon name="logo-github"></ion-icon></a>
         </nav>
     )
