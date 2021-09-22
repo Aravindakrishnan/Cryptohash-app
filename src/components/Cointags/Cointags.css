@@ -1,0 +1,37 @@
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.cointag_container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 1.8rem;
+}
+
+.cointag {
+  padding: 1.2rem;
+  border: 1px solid #3b3b3b;
+  margin: 0.8rem;
+  list-style-type: none;
+  border-radius: 0.6rem;
+  transition: 0.2s;
+  cursor: pointer;
+}
+
+.cointag:active {
+  background: #ff416c; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #ff4b2b,
+    #ff416c
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #ff4b2b, #ff416c);
+  color: #fbfbfb;
+  border: none;
+  transform: scale(0.9);
+}

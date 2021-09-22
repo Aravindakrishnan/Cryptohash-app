@@ -1,0 +1,126 @@
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.coin_card {
+  padding: 1.8rem;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  position: relative;
+  margin: 1.8rem;
+  border: 2px solid #3b3b3b;
+  border-radius: 0.6rem;
+  box-shadow: 0 0 1rem rgba(0, 0, 0, 0.2) inset;
+}
+
+.coin__header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.coin__title {
+  font-size: 4.2rem;
+}
+.coin__price {
+  font-size: 3.8rem;
+  margin-bottom: 1.2rem;
+}
+
+.coin__body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.coin__supply,
+.coin__max {
+  margin-right: 1.8rem;
+}
+
+.coin__aside {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+
+.coin__change {
+  cursor: pointer;
+  font-size: 1.8rem;
+  padding: 0 2.2rem;
+}
+
+.coin__highlight {
+  background: #ff416c; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #ff4b2b,
+    #ff416c
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #ff4b2b,
+    #ff416c
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  color: #fbfbfb;
+  padding: 1.2rem;
+  border-radius: 0.6rem;
+}
+
+.danger,
+.success {
+  padding: 1.2rem;
+  border-radius: 0.6rem;
+}
+
+.danger {
+  background: #e53935; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #e35d5b,
+    #e53935
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #e35d5b,
+    #e53935
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  color: #fbfbfb;
+}
+
+.success {
+  background: #11998e; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #38ef7d,
+    #11998e
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #38ef7d,
+    #11998e
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.coin__footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1.8rem;
+  flex-direction: column;
+}
+
+.coin__market_ {
+  font-size: 2.8rem;
+}
+
+@media screen and (max-width: 600px) {
+  .coin__change {
+    font-size: 1.8rem;
+  }
+}

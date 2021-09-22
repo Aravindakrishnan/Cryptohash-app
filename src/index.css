@@ -1,0 +1,55 @@
+@font-face {
+  font-family: "Hellix";
+  src: url("./fonts/Hellix-Regular.woff") format("woff");
+}
+
+html {
+  font-size: 62.5%;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Hellix";
+}
+
+body {
+  line-height: 1.5;
+}
+/* typography */
+
+h1 {
+  font-size: 3.052rem;
+}
+
+h2 {
+  font-size: 2.441rem;
+}
+
+h3 {
+  font-size: 1.953rem;
+}
+
+h4 {
+  font-size: 1.563rem;
+}
+
+h5 {
+  font-size: 1.25rem;
+}
+
+h6 {
+  font-size: 1rem;
+}
+
+p {
+  font-size: 1.953rem;
+}
+
+li {
+  font-size: 1.563rem;
+}
+a {
+  font-size: 1.563rem;
+}
