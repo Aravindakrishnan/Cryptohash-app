@@ -14,9 +14,10 @@ export default function Coincard(props) {
         }
         setCount(count+1);
     }
+
     return (
         <div className="container">
-            
+    
         <div className="coin_card">
             <div className="coin__aside">
                 <span onClick={()=> { coinChangesHandler() }} className={`coin__change ${coinChangeColor}`}>{coinChangeColor==="danger" ? "" : "+"} {coin[ coinChanges[count] ]} ({coinHours})</span>
@@ -36,7 +37,8 @@ export default function Coincard(props) {
                 <p className="coin__market_">{coin.market_cap_usd || "NULL" }</p>   
             </div>
 
-        </div>
+        </div> 
+           
         </div>
     )
 }

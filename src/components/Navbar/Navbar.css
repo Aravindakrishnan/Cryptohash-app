@@ -6,3 +6,6 @@
   display: flex;
   justify-content: space-between;
 }
+.navbar__link {
+  color: #3b3b3b;
+}

@@ -1,21 +1,24 @@
 import React, { useEffect, useState } from 'react'
 import { getCoins } from '../../services/getCoins';
 import Coincard from '../Coincard/Coincard';
-
+import Loading from '../Loading/Loading';
 import "./Cointags.css";
 export default function Cointags() {
     const [coins,setCoins] = useState([]);
     const [coinDetail,setCoinDetail] = useState({});
+    const [loading,setLoading] = useState(false);
 
     useEffect(()=> {
+      
+      setLoading(true);
         
       getCoins("https://api.coinlore.net/api/tickers/")
         .then(data => {
             console.log(data);
             setCoins(data['data']);
             setCoinDetail(data['data'][0]);
+            setLoading(false);
         })
-
     },[])
 
     const setCoinNameHandler = (coinname) => {
@@ -28,8 +31,9 @@ export default function Cointags() {
     return (
 
         <div className="container">
-       
-        <Coincard coin={coinDetail}/>
+
+        { loading ? <Loading></Loading> : <Coincard coin={coinDetail}/> }
+
         
         <div className="cointag_container">   
 
@@ -40,7 +44,7 @@ export default function Cointags() {
                     return <li key={coin.id} onClick={()=> { setCoinNameHandler(coin.name) }}  className="cointag"><span>#{coin.rank}</span> {coin.name}</li>
                 }) 
             }
-        </div>
+        </div>)
         
         </div>
     )

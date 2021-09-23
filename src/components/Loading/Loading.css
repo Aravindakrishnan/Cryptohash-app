@@ -1,0 +1,17 @@
+.loading {
+  width: 6rem;
+  height: 6rem;
+  border: 0.4rem dotted #ff4b2b;
+  border-radius: 50%;
+  animation: loading 1s linear infinite;
+  margin: 1.8rem;
+}
+
+@keyframes loading {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
