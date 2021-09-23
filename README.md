@@ -1,3 +1,3 @@
 # CryptoHash-App
-###CREDITS:
+### CREDITS:
 API_USED : https://api.coinlore.net/api/tickers/
