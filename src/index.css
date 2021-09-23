@@ -3,8 +3,27 @@
   src: url("./fonts/Hellix-Regular.woff") format("woff");
 }
 
-html {
+html,
+#root {
   font-size: 62.5%;
+}
+
+:root {
+  --primary-color: #fbfbfb;
+  --secondary-color: #3b3b3b;
+  --border-color: #3b3b3b;
+}
+
+.dark-theme {
+  --primary-color: #3b3b3b;
+  --secondary-color: #fbfbfb;
+  --border-color: #ff416c;
+}
+
+.light-theme {
+  --primary-color: #fbfbfb;
+  --secondary-color: #3b3b3b;
+  --border-color: #3b3b3b;
 }
 
 * {
@@ -14,8 +33,11 @@ html {
   font-family: "Hellix";
 }
 
-body {
+body,
+#root {
   line-height: 1.5;
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
 }
 
 /* scroll-bar */
