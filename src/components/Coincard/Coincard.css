@@ -13,7 +13,7 @@
   margin: 1.8rem;
   border: 2px solid var(--border-color);
   border-radius: 0.6rem;
-  box-shadow: 0 0 1rem rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0 1rem rgba(0, 0, 0, 0.2) inset;
 }
 
 .coin__header {
