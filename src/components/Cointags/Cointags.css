@@ -15,12 +15,14 @@
 
 .cointag {
   padding: 1.2rem;
-  border: 1px solid #3b3b3b;
+  border: 1px solid var(--border-color);
   margin: 0.8rem;
   list-style-type: none;
   border-radius: 0.6rem;
   transition: 0.2s;
   cursor: pointer;
+
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
 
 .cointag:active {

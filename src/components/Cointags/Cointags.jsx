@@ -14,7 +14,6 @@ export default function Cointags() {
         
       getCoins("https://api.coinlore.net/api/tickers/")
         .then(data => {
-            console.log(data);
             setCoins(data['data']);
             setCoinDetail(data['data'][0]);
             setLoading(false);
@@ -44,8 +43,8 @@ export default function Cointags() {
                     return <li key={coin.id} onClick={()=> { setCoinNameHandler(coin.name) }}  className="cointag"><span>#{coin.rank}</span> {coin.name}</li>
                 }) 
             }
-        </div>)
-        
         </div>
-    )
-}
+        
+
+        </div>
+    )}
