@@ -1,0 +1,22 @@
+.sidebar {
+  position: fixed;
+  width: 20vw;
+  background: var(--primary-color);
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  box-shadow: 0 0 1rem rgba(0, 0, 0, 0.1);
+  display: none;
+  height: 100%;
+}
+
+.sidebar__item {
+  list-style-type: none;
+  padding: 1.8rem;
+}
+
+.sidebar__link {
+  text-decoration: none;
+  color: var(--secondary-color);
+}

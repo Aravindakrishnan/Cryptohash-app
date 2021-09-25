@@ -3,7 +3,7 @@
   height: 6rem;
   border: 0.4rem dotted #ff4b2b;
   border-radius: 50%;
-  animation: loading 1s linear infinite;
+  animation: loading 2s linear infinite;
   margin: 1.8rem;
 }
 

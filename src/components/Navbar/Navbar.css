@@ -6,18 +6,20 @@
   border-bottom: 0.3rem dotted #3b3b3b;
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 .navbar__link {
   color: var(--secondary-color);
 }
 
 code {
+  cursor: pointer;
   display: inline-block;
   font-size: 1.4rem;
   padding: 0.8rem;
   background: var(--secondary-color);
   color: var(--primary-color);
-  margin: 0.5rem;
+  margin: 1rem;
   border-radius: 0.6rem;
 }
 
@@ -44,8 +46,8 @@ code {
   }
 }
 
-@media screen and (max-width: 600px) {
+/* @media screen and (max-width: 600px) {
   code {
     display: none;
   }
-}
+} */
