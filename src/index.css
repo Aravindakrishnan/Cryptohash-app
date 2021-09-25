@@ -12,18 +12,21 @@ html,
   --primary-color: #fbfbfb;
   --secondary-color: #3b3b3b;
   --border-color: #3b3b3b;
+  --loading-color: #ff416c;
 }
 
 .dark-theme {
   --primary-color: #3b3b3b;
   --secondary-color: #fbfbfb;
   --border-color: #ff416c;
+  --loading-color: #ffdbdb;
 }
 
 .light-theme {
   --primary-color: #fbfbfb;
   --secondary-color: #3b3b3b;
   --border-color: #3b3b3b;
+  --loading-color: #ff416c;
 }
 
 * {

@@ -2,7 +2,6 @@ import { useEffect, useState } from 'react';
 import './App.css';
 import Cointags from './components/Cointags/Cointags';
 import Navbar from './components/Navbar/Navbar';
-import Sidebar from './components/Sidebar/Sidebar';
 import { putTheme, setTheme } from './services/getTheme';
 function App() {
    
