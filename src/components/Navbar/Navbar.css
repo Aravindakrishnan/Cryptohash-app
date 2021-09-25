@@ -3,7 +3,7 @@
   color: var(--secondary-color);
   background: var(--primary-color);
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-  border-bottom: 0.3rem dotted #3b3b3b;
+  border-bottom: 0.3rem dotted var(--border-color);
   display: flex;
   justify-content: space-between;
   align-items: center;

@@ -40,7 +40,11 @@ export default function Cointags() {
                 coins 
                 &&
                 coins.map(coin => {
-                    return <li key={coin.id} onClick={()=> { setCoinNameHandler(coin.name) }}  className="cointag"><span>#{coin.rank}</span> {coin.name}</li>
+                    return (
+                    <div key={coin.id} className="cointag__item">
+                        <li  onClick={()=> { setCoinNameHandler(coin.name) }}  className="cointag"><span>#{coin.rank}</span> {coin.name}</li>
+                    </div>
+                    )
                 }) 
             }
         </div>

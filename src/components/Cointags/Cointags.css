@@ -7,10 +7,10 @@
 
 .cointag_container {
   display: flex;
-  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
   margin-bottom: 1.8rem;
+  flex-wrap: wrap;
 }
 
 .cointag {
@@ -21,8 +21,13 @@
   border-radius: 0.6rem;
   transition: 0.2s;
   cursor: pointer;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  outline: none;
+}
 
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+.cointag__item {
+  position: relative;
 }
 
 .cointag:active {
@@ -35,5 +40,11 @@
   background: linear-gradient(to right, #ff4b2b, #ff416c);
   color: #fbfbfb;
   border: none;
-  transform: scale(0.9);
+}
+
+@media screen and (max-width: 600px) {
+  .cointag_container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
 }
