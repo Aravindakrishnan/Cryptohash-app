@@ -1,3 +1,10 @@
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 1.8rem;
+}
+
 .container {
   display: flex;
   justify-content: center;
@@ -40,6 +47,27 @@
   background: linear-gradient(to right, #ff4b2b, #ff416c);
   color: #fbfbfb;
   border: none;
+}
+
+.search-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 1.8rem 0;
+}
+.search-container input {
+  padding: 1.8rem;
+  width: 80vw;
+  border: 0.1rem solid var(--border-color);
+  outline: none;
+  border-radius: 0.6rem;
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+  font-size: 1.8rem;
+}
+.search-container input:focus {
+  box-shadow: 0 0 1rem rgba(0, 0, 0, 0.1);
 }
 
 @media screen and (max-width: 600px) {
